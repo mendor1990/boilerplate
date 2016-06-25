@@ -1,5 +1,10 @@
-extends layout
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .wraper
+     block content
 
-block content
-  h1= title
-  p Welcome to #{title}
+    script(src='/bower_components/jquery/dist/jquery.min.js')

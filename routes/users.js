@@ -1,9 +1,21 @@
 var express = require('express');
+var User = require('../models/user');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/register', function(req, res, next) {
+
+  res.render('users/register');
+});
+
+router.post('/register', function(req, res, next) {
+
+  if(req.body && req.body.data) {
+
+    User.create(req.body.data, function(err){
+
+      if(err)throw new Error(err.message);
+    });
+  }
 });
 
 module.exports = router;

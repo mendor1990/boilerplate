@@ -1,0 +1,16 @@
+{
+  "name": "boilerplate",
+  "description": "-",
+  "main": "-",
+  "authors": [
+    "Thernytskyi A."
+  ],
+  "license": "MIT",
+  "keywords": [
+    "-"
+  ],
+  "homepage": "https://github.com/mendor1990/boilerplate",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}

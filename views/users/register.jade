@@ -1,0 +1,13 @@
+extends ../index.jade
+
+block content
+  form(method='POST', action='/register')
+    span login*
+    input(type='text', name='data[login]')
+    span password*
+    input(type='password', name='data[password]')
+    span Name*
+    input(type='text', name='data[first_name]')
+    span Last name*
+    input(type='text', name='data[last_name]')
+    input(type='submit', value='register')
